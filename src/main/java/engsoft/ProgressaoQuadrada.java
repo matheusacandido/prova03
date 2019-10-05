@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ProgressaoQuadrada extends Progressao {
 
 	private Progressao progressao;
-	private int quadrado;
+	private int resultado;
 
 	public ProgressaoQuadrada(Progressao progressao) {
 
@@ -25,8 +25,9 @@ public class ProgressaoQuadrada extends Progressao {
 
 	public int proxTermo() {
 
-		int q = this.progressao.proxTermo();
-        quadrado = q*q;
-		return quadrado;
+		int termo = this.progressao.proxTermo();
+		resultado = (int) Math.pow(termo,2);
+		return resultado;
 
-	}}
+	}
+}
