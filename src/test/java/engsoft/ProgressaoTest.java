@@ -174,25 +174,25 @@ public class ProgressaoTest extends TestCase {
     }
 
     public void testProgressaoQuadrada() {
-//    	Progressao p = new ProgressaoQuadrada(new ProgressaoAritmetica(1));
-//    	assertEquals(0, p.inicia());
-//    	assertEquals(1, p.proxTermo());
-//    	assertEquals(4, p.proxTermo());
-//    	assertEquals(9, p.proxTermo());
-//    	assertEquals(16,p.proxTermo());
-//    	assertEquals("0 1 4 9 16 25\n",p.imprimeProgressao(5));
-//    	
-//    	Progressao q = new ProgressaoQuadrada(new ProgressaoGeometrica());
-//    	assertEquals(1, q.inicia());
-//    	assertEquals(4, q.proxTermo());
-//        assertEquals(16, q.proxTermo());
-//        
-//        Progressao f = new ProgressaoQuadrada(new ProgressaoFibonacci());
-//        assertEquals(0, p.inicia());
-//        assertEquals(1, p.proxTermo());
-//        assertEquals(1, p.proxTermo());
-//        assertEquals(9, p.iesimoTermo(4));
-//        assertEquals(64, p.iesimoTermo(6));
+    	Progressao p = new ProgressaoQuadrada(new ProgressaoAritmetica(1));
+    	assertEquals(0, p.inicia());
+    	assertEquals(1, p.proxTermo());
+    	assertEquals(4, p.proxTermo());
+    	assertEquals(9, p.proxTermo());
+    	assertEquals(16,p.proxTermo());
+    	assertEquals("0 1 4 9 16 25\n",p.imprimeProgressao(5));
+    	
+    	Progressao q = new ProgressaoQuadrada(new ProgressaoGeometrica());
+    	assertEquals(1, q.inicia());
+    	assertEquals(4, q.proxTermo());
+        assertEquals(16, q.proxTermo());
+        
+        Progressao f = new ProgressaoQuadrada(new ProgressaoFibonacci());
+        assertEquals(0, f.inicia());
+        assertEquals(1, f.proxTermo());
+        assertEquals(1, f.proxTermo());
+        assertEquals(9, f.iesimoTermo(4));
+        assertEquals(64, f.iesimoTermo(6));
     }
 }
 
